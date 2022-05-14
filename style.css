@@ -2,54 +2,206 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Spartan', sans-serif;
 }
 
 body{
     width: 100%;
+    font-family: 'Spartan', sans-serif;
 }
 
 h1{
-    font-size: 3.125rem;
-    line-height: 4rem;
+    font-size: 3.125rem;   /* 50px  */
+    line-height: 4rem;     /* 64px  */
     color: #222;
 }
 
 h2{
-    font-size: 2.875rem;
-    line-height: 3.375rem;
+    font-size: 2.875rem;    /* 46px  */
+    line-height: 3.375rem;  /* 54px  */
     color: #222;
 
 }
 
 h4{
-    font-size: 1.25rem;
+    font-size: 1.25rem;     /* 20px  */
     color: #222;
 }
 
 h6{
-    font-size: 0.75rem;
+    font-size: 0.75rem;     /* 12px  */
     font-weight: 700;
 }
 
 p{
-    font-size: 1rem;
+    font-size: 1rem;         /* 16px  */
     color: #465b52;
-    margin: 1rem 0 1.25rem 0;
+    margin: 1rem 0 1.25rem 0;  /* 16px 0 20px 0  */
 }
 
 .section-p1{
-    padding: 2.5rem 5rem;
+    padding: 2.5rem 5rem;    /* 40px  80px*/
 }
 
 .section-m1{
-    margin: 2.5rem 0;
+    margin: 2.5rem 0;       /* 40px 0 */
 }
 
 /* Header Start */
+.header{
+    background-color: #E3E6F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 5rem;    /* 20px 80px */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li{
+    list-style: none;
+    /* padding-left: 1.125rem; */
+    padding: 0 1.125rem;   /* 18px  */
+    position: relative;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-size: 1rem;          /* 16px  */
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+
+.navbar li a:hover,
+.navbar li a.active{
+    color: #088178;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content: "";
+    width:30%;
+    height: 0.125rem;     /* 2px  */
+    background-color: #088178;
+    position: absolute;
+    bottom: -0.25rem;     /* 4px  */
+    left: 1.25rem;          /* 20px  */
+}
 
 
 /* Home Page */
+.hero{
+    background-image: url("/img/hero4.png");
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.25rem 5rem;      /* 20px 80px */
+}
+
+.hero h4{
+    padding-bottom: 1rem;
+}
+
+.hero h1{
+    color: #088178;
+}
+
+.hero button{
+    background-image: url("/img/button.png");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding:1rem 5rem 1rem 4rem;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.94rem;     /* 15px */
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature__box{
+    width: 11.25rem;        /* 180px */
+    text-align: center;
+    padding: 1.5rem 1rem;   /* 24px  16px*/
+    box-shadow: 1.25rem 1.25rem 2.125rem rgba(0,0,0,0.03);     /* 20px 20px 34px */
+    border: 1px solid #cce7d0;
+    border-radius: 0.25rem;   /* 4px */
+    margin: 0.94rem 0;           /* 15px */
+}
+
+.feature__box:hover{
+    box-shadow: 0.625rem 0.625rem 3.375rem rgba(70,62,221,0.1);     /* 10px 10px 54px */
+    /* increase x increase y reduce radius */
+}
+
+.feature__box img{
+    width:100%;
+    /* margin-bottom: 10px; */
+}
+
+.feature__box h6{
+    background-color: #fddde4;
+    color: #088178;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 0.25 rem;
+    display: incline-block;    /* to reduce padding effect */
+}
+
+.feature__box:nth-child(2) h6{
+    background-color: #cdebbc;
+
+}
+
+.feature__box:nth-child(3) h6{
+    background-color: #d1e8f2;
+
+}
+
+.feature__box:nth-child(4) h6{
+    background-color: #cdd4f8;
+
+}
+
+.feature__box:nth-child(5) h6{
+    background-color: #f6dbf6;
+
+}
+
+.feature__box:nth-child(6) h6{
+    background-color: #fff2e5;
+
+}
 
 
 /* Shop Page */
+
+
+/* Single Product */
+
+
+/* Blog Page */
+
+
+/* About Page */
