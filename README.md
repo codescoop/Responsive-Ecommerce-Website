@@ -1,5 +1,7 @@
 # Responsive-Ecommerce-Website
 
+![GitHub repo size](https://img.shields.io/github/repo-size/codescoop/Responsive-Ecommerce-Website)
+
 Fully responsive ecommerce website, built using HTML CSS and JavaScript.
 
 ## Demo
