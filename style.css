@@ -1,3 +1,11 @@
+:root{
+    --green: #088178;
+    --grey: #E3E6F3;
+    --heading_color: #222;
+    --paragraph_color: #465b52;
+    /* --green: #cce7d0; */
+}
+
 *, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
@@ -12,19 +20,19 @@ body{
 h1{
     font-size: 3.125rem;   /* 50px  */
     line-height: 4rem;     /* 64px  */
-    color: #222;
+    color: var(--heading_color);
 }
 
 h2{
     font-size: 2.875rem;    /* 46px  */
     line-height: 3.375rem;  /* 54px  */
-    color: #222;
+    color: var(--heading_color);
 
 }
 
 h4{
     font-size: 1.25rem;     /* 20px  */
-    color: #222;
+    color: var(--heading_color);
 }
 
 h6{
@@ -34,7 +42,7 @@ h6{
 
 p{
     font-size: 1rem;         /* 16px  */
-    color: #465b52;
+    color: var(--paragraph_color);
     margin: 1rem 0 1.25rem 0;  /* 16px 0 20px 0  */
 }
 
@@ -84,7 +92,7 @@ p{
 
 .navbar li a:hover,
 .navbar li a.active{
-    color: #088178;
+    color: var(--green);
 }
 
 .navbar li a.active::after,
@@ -92,7 +100,7 @@ p{
     content: "";
     width:30%;
     height: 0.125rem;     /* 2px  */
-    background-color: #088178;
+    background-color: var(--green);
     position: absolute;
     bottom: -0.25rem;     /* 4px  */
     left: 1.25rem;          /* 20px  */
@@ -118,13 +126,13 @@ p{
 }
 
 .hero h1{
-    color: #088178;
+    color: var(--green);
 }
 
 .hero button{
     background-image: url("img/button.png");
     background-color: transparent;
-    color: #088178;
+    color: var(--green);
     border: 0;
     padding:1rem 5rem 1rem 4rem;
     background-repeat: no-repeat;
@@ -162,7 +170,7 @@ p{
 
 .feature__box h6{
     background-color: #fddde4;
-    color: #088178;
+    color: var(--green);
     padding: 9px 8px 6px 8px;
     line-height: 1;
     border-radius: 0.25 rem;
@@ -193,6 +201,82 @@ p{
     background-color: #fff2e5;
 
 }
+
+.product1{
+    text-align: center;
+}
+
+.product1__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0 ;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0; 
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+.product1 .pro img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.product1 .pro .desc{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.product1 .pro .desc span{
+    color: #606063;
+    font-size: 12px;
+}
+
+.product1 .pro .desc h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.product1 .pro .desc i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+
+.product1 .pro .desc h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    /* font-weight: 500; */
+    color: var(--green);
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
 
 
 /* Shop Page */
