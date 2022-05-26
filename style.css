@@ -426,6 +426,60 @@ button.white{
     background-image: url(img/banner/b18.jpg);
 }
 
+.newsletter{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 40px 80px; */
+    background-image: url(img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+.newsletter__text h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.newsletter__text p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+.newsletter__text p span{
+    color: #ffbd27;
+}
+
+.newsletter__form{
+    display: flex;
+    width: 40%;
+}
+
+.newsletter__form input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+}
+
+.newsletter__form button{
+    background-color: var(--green);
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
 
 /* Shop Page */
 
