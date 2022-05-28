@@ -513,9 +513,34 @@ footer a{
     margin: 0 0 10px 0;
 }
 
+footer .follow{
+    margin-top: 20px;
+}
 
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
 
+footer .follow i:hover,
+footer a:hover{
+    color: var(--green);
+}
 
+footer .install .row img{
+    border: 1px solid var(--green);
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
 /* Shop Page */
 
 
