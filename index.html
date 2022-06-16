@@ -17,19 +17,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
   </head>
+
   <body>
     <section class="header">
       <a href="#"><img src="img/logo.png" alt="logo" /></a>
       <nav>
-        <ul class="navbar">
+        <ul id="navbar" class="navbar">
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li>
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-          </li>
+          <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+          <a href="#" id="close"><i class="fas fa-times"></i></a>
         </ul>
       </nav>
       <div class="mobile">
@@ -443,6 +443,6 @@
       </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
